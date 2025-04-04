@@ -1,0 +1,5 @@
+pp_iscompleted: =If(IsBlank(pp_datecompletion),false,true)
+pp_issueage: =DateDiff(createdon,Now(),TimeUnit.Days)
+pp_reportingdays: |-
+    =//
+    DateDiff(pp_dateobserved,Now(),TimeUnit.Days)
